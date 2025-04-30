@@ -1,0 +1,9 @@
+*.txt
+*.pdf
+*.zip
+*.tar
+*.xlsx
+build
+dist
+__pycache__
+.vscode

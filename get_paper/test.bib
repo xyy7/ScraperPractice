@@ -1,0 +1,150 @@
+157.
+@article{ricao2017compressed,
+  title={Compressed voxel-based mapping using unsupervised learning},
+  author={Ricao Canelhas, Daniel and Schaffernicht, Erik and Stoyanov, Todor and Lilienthal, Achim J and Davison, Andrew J},
+  journal={Robotics},
+  volume={6},
+  number={3},
+  pages={15},
+  year={2017},
+  publisher={MDPI},
+  URL = {https://doi.org/10.3390/robotics6030015},
+}
+
+158.
+@article{20163002645645 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Compression of 3D Point Clouds Using a Region-Adaptive Hierarchical Transform},
+journal = {IEEE Transactions on Image Processing},
+author = {De Queiroz, Ricardo L. and Chou, Philip A.},
+volume = {25},
+number = {8},
+year = {2016},
+pages = {3947 - 3956},
+issn = {10577149},
+abstract = {In free-viewpoint video, there is a recent trend to represent scene objects as solids rather than using multiple depth maps. Point clouds have been used in computer graphics for a long time, and with the recent possibility of real-time capturing and rendering, point clouds have been favored over meshes in order to save computation. Each point in the cloud is associated with its 3D position and its color. We devise a method to compress the colors in point clouds, which is based on a hierarchical transform and arithmetic coding. The transform is a hierarchical sub-band transform that resembles an adaptive variation of a Haar wavelet. The arithmetic encoding of the coefficients assumes Laplace distributions, one per sub-band. The Laplace parameter for each distribution is transmitted to the decoder using a custom method. The geometry of the point cloud is encoded using the well-established octtree scanning. Results show that the proposed solution performs comparably with the current state-of-the-art, in many occasions outperforming it, while being much more computationally efficient. We believe this paper represents the state of the art in intra-frame compression of point clouds for real-time 3D video.<br/> &copy; 1992-2012 IEEE.},
+key = {Image compression},
+keywords = {Laplace transforms;Three dimensional computer graphics;},
+note = {Free-viewpoint video;Immersive;Point cloud;RAHT;Real time;},
+URL = {http://dx.doi.org/10.1109/TIP.2016.2575005},
+} 
+
+
+159.
+@inproceedings{20195207921460 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Learning Convolutional Transforms for Lossy Point Cloud Geometry Compression},
+journal = {Proceedings - International Conference on Image Processing, ICIP},
+author = {Quach, Maurice and Valenzise, Giuseppe and Dufaux, Frederic},
+volume = {2019-September},
+year = {2019},
+pages = {4320 - 4324},
+issn = {15224880},
+address = {Taipei, Taiwan},
+abstract = {Efficient point cloud compression is fundamental to enable the deployment of virtual and mixed reality applications, since the number of points to code can range in the order of millions. In this paper, we present a novel data-driven geometry compression method for static point clouds based on learned convolutional transforms and uniform quantization. We perform joint optimization of both rate and distortion using a trade-off parameter. In addition, we cast the decoding process as a binary classification of the point cloud occupancy map. Our method outperforms the MPEG reference solution in terms of rate-distortion on the Microsoft Voxelized Upper Bodies dataset with 51.5% BDBR savings on average. Moreover, while octree-based methods face exponential diminution of the number of points at low bitrates, our method still produces high resolution outputs even at low bitrates. Code and supplementary material are available at https://github.com/mauriceqch/pcc-geo-cnn.<br/> &copy; 2019 IEEE.},
+URL = {http://dx.doi.org/10.1109/ICIP.2019.8803413},
+} 
+
+
+160.
+@inproceedings{20210309772872 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Improved Deep Point Cloud Geometry Compression},
+journal = {IEEE 22nd International Workshop on Multimedia Signal Processing, MMSP 2020},
+author = {Quach, Maurice and Valenzise, Giuseppe and Dufaux, Frederic},
+year = {2020},
+address = {Virtual, Tampere, Finland},
+abstract = {Point clouds have been recognized as a crucial data structure for 3D content and are essential in a number of applications such as virtual and mixed reality, autonomous driving, cultural heritage, etc. In this paper, we propose a set of contributions to improve deep point cloud compression, i.e.: using a scale hyperprior model for entropy coding; employing deeper transforms; a different balancing weight in the focal loss; optimal thresholding for decoding; and sequential model training. In addition, we present an extensive ablation study on the impact of each of these factors, in order to provide a better understanding about why they improve RD performance. An optimal combination of the proposed improvements achieves BD-PSNR gains over G-PCC trisoup and octree of 5.50 (6.48) dB and 6.84 (5.95) dB, respectively, when using the point-to-point (point-to-plane) metric. Code is available at https://github.com/mauriceqch/pcc_geo_cnn_v2.<br/> &copy; 2020 IEEE.},
+key = {Mixed reality},
+keywords = {Computer vision;Three dimensional computer graphics;},
+note = {Autonomous driving;Balancing weight;Cultural heritages;Entropy coding;Optimal combination;Optimal thresholding;Point to point;Sequential model;},
+URL = {http://dx.doi.org/10.1109/MMSP48831.2020.9287077},
+} 
+
+
+161.
+@article{20210409805575 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Lossy Point Cloud Geometry Compression via End-to-End Learning},
+journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+author = {Wang, Jianqiang and Zhu, Hao and Liu, Haojie and Ma, Zhan},
+volume = {31},
+number = {12},
+year = {2021},
+pages = {4909 - 4923},
+issn = {10518215},
+abstract = {<div data-language="eng" data-ev-field="abstract">This paper presents a novel end-to-end Learned Point Cloud Geometry Compression (a.k.a., Learned-PCGC) system, leveraging stacked Deep Neural Networks (DNN) based Variational AutoEncoder (VAE) to efficiently compress the Point Cloud Geometry (PCG). In this systematic exploration, PCG is first voxelized, and partitioned into non-overlapped 3D cubes, which are then fed into stacked 3D convolutions for compact latent feature and hyperprior generation. Hyperpriors are used to improve the conditional probability modeling of entropy-coded latent features. A Weighted Binary Cross-Entropy (WBCE) loss is applied in training while an adaptive thresholding is used in inference to remove false voxels and reduce the distortion. Objectively, our method exceeds the Geometry-based Point Cloud Compression (G-PCC) algorithm standardized by the Moving Picture Experts Group (MPEG) with a significant performance margin, e.g., at least 60% BD-Rate (Bj&ouml;ntegaard Delta Rate) savings, using common test datasets, and other public datasets. Subjectively, our method has presented better visual quality with smoother surface reconstruction and appealing details, in comparison to all existing MPEG standard compliant PCC methods. Our method requires about 2.5 MB parameters in total, which is a fairly small size for practical implementation, even on embedded platform. Additional ablation studies analyze a variety of aspects (e.g., thresholding, kernels, etc) to examine the generalization, and application capacity of our Learned-PCGC. We would like to make all materials publicly accessible at https://njuvision.github.io/PCGCv1/ for reproducible research.<br/></div> &copy; 1991-2012 IEEE.},
+key = {Convolution},
+keywords = {Deep neural networks;Geometry;Classification (of information);Motion Picture Experts Group standards;Entropy;},
+note = {Adaptive thresholding;Conditional probabilities;Embedded platforms;Moving picture experts group;Publicly accessible;Reproducible research;Systematic exploration;Visual qualities;},
+URL = {http://dx.doi.org/10.1109/TCSVT.2021.3051377},
+} 
+
+
+162.
+@inproceedings{20212110387978 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Multiscale Point Cloud Geometry Compression},
+journal = {Data Compression Conference Proceedings},
+author = {Wang, Jianqiang and Ding, Dandan and Li, Zhu and Ma, Zhan},
+volume = {2021-March},
+year = {2021},
+pages = {73 - 82},
+issn = {10680314},
+address = {Snowbird, UT, United states},
+abstract = {<div data-language="eng" data-ev-field="abstract">Recent years have witnessed the growth of point cloud based applications for both immersive media as well as 3D sensing for auto-driving, because of its realistic and fine-grained representation of 3D objects and scenes. However, it is a challenging problem to compress sparse, unstructured, and high-precision 3D points for efficient communication. In this paper, leveraging the sparsity nature of the point cloud, we propose a multiscale end-to-end learning framework that hierarchically reconstructs the 3D Point Cloud Geometry (PCG) via progressive re-sampling. The framework is developed on top of a sparse convolution based autoencoder for point cloud compression and reconstruction. For the input PCG which has only the binary occupancy attribute, our framework translates it to a down-scaled point cloud at the bottleneck layer which possesses both geometry and associated feature attributes. Then, the geometric occupancy is losslessly compressed using an octree codec and the feature attributes are lossy compressed using a learned probabilistic context model. Compared with the state-of-the-art Video-based Point Cloud Compression (V-PCC) and Geometry-based PCC (G-PCC) schemes standardized by the Moving Picture Experts Group (MPEG), our method achieves more than 40% and 70% BD-Rate (BjOntegaard Delta Rate) reduction, respectively. We would like to make all materials publicly accessible at http://njuvision.github.io/PCGCv2/for reproducible research.<br/></div> &copy; 2021 IEEE.},
+key = {Geometry},
+keywords = {Computer vision;},
+note = {Associated feature;Efficient communications;Feature attributes;Learning frameworks;Moving picture experts group;Publicly accessible;Reproducible research;State of the art;},
+URL = {http://dx.doi.org/10.1109/DCC50243.2021.00015},
+} 
+
+
+163.
+@inproceedings{20194607684322 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {3D point cloud geometry compression on deep learning},
+journal = {MM 2019 - Proceedings of the 27th ACM International Conference on Multimedia},
+author = {Huang, Tianxin and Liu, Yong},
+year = {2019},
+pages = {890 - 898},
+address = {Nice, France},
+abstract = {3D point cloud presentation has been widely used in computer vision, automatic driving, augmented reality, smart cities and virtual reality. 3D point cloud compression method with higher compression ratio and tiny loss is the key to improve data transportation efficiency. In this paper, we propose a new 3D point cloud geometry compression method based on deep learning, also an auto-encoder performing better than other networks in detail reconstruction. It can reach much higher compression ratio than the state-of-art while keeping tolerable loss. It also supports parallel compressing multiple models by GPU, which can improve processing efficiency greatly. The compression process is composed of two parts. Firstly, Raw data is compressed into codeword by extracting feature of raw model with encoder. Then, the codeword is further compressed with sparse coding. Decompression process is implemented in reverse order. Codeword is recovered and fed into decoder to reconstruct point cloud. Detail reconstruction ability is improved by a hierarchical structure in our decoder. Latter outputs are grown from former fuzzier outputs. In this way, details are added to former output by latter layers step by step to make a more precise prediction. We compare our method with PCL compression and Draco compression on ShapeNet40 part dataset. Our method may be the first deep learning-based point cloud compression algorithm. The experiments demonstrate it is superior to former common compression algorithms with large compression ratio, which can also reserve original shapes with tiny loss.<br/> &copy; 2019 Association for Computing Machinery.},
+key = {Geometry},
+keywords = {Image reconstruction;Augmented reality;Virtual reality;Signal encoding;Deep learning;Decoding;Efficiency;Automobile drivers;},
+note = {3D point cloud;Auto encoders;Compression algorithms;Compression process;Geometry compression;Hierarchical structures;Higher compression ratios;Transportation efficiency;},
+URL = {http://dx.doi.org/10.1145/3343031.3351061},
+} 
+
+
+164.
+@inproceedings{20203709163298 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Lossy Geometry Compression of 3D Point Cloud Data Via An Adaptive Octree-Guided Network},
+journal = {Proceedings - IEEE International Conference on Multimedia and Expo},
+author = {Wen, Xuanzheng and Wang, Xu and Hou, Junhui and Ma, Lin and Zhou, Yu and Jiang, Jianmin},
+volume = {2020-July},
+year = {2020},
+pages = {et al.; IEEE; Springer; Tencent Media Lab; The Institution of Engineering and Technology (IET); YouTube - },
+issn = {19457871},
+address = {London, United kingdom},
+abstract = {In this paper, we propose a deep learning based framework for point cloud geometry lossy compression via hybrid representation of point cloud. First, the input raw 3D point cloud data is adaptively decomposed into non-overlapping local patches through adaptive Octree decomposition and clustering. Second, a framework of point cloud auto-encoder network with quantization layer is proposed for learning compact latent feature representation from each patch. Specifically, the proposed point cloud auto-encoder networks with different input size are trained for achieving optimal rate-distortion (RD) performance. Final, bitstream specifications of proposed compression systems with additional signaled meta-data and header information are designed to support parallel decoding and successive reconstruction. Experimental results shows that our proposed method can achieve 40.20% bitrate saving in average than the existing standard Geometry based Point Cloud Compression (G-PCC) codec.<br/> &copy; 2020 IEEE.},
+key = {Geometry},
+keywords = {Deep learning;Signal distortion;Network coding;Image coding;Network layers;Electric distortion;},
+note = {Bit-rate savings;Compression system;Feature representation;Geometry compression;Hybrid representations;Lossy compressions;Octree decomposition;Parallel decoding;},
+URL = {http://dx.doi.org/10.1109/ICME46284.2020.9102866},
+} 

@@ -1,0 +1,935 @@
+157.
+@article{ricao2017compressed,
+  title={Compressed voxel-based mapping using unsupervised learning},
+  author={Ricao Canelhas, Daniel and Schaffernicht, Erik and Stoyanov, Todor and Lilienthal, Achim J and Davison, Andrew J},
+  journal={Robotics},
+  volume={6},
+  number={3},
+  pages={15},
+  year={2017},
+  publisher={MDPI},
+  URL = {https://doi.org/10.3390/robotics6030015},
+}
+
+158.
+@article{20163002645645 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Compression of 3D Point Clouds Using a Region-Adaptive Hierarchical Transform},
+journal = {IEEE Transactions on Image Processing},
+author = {De Queiroz, Ricardo L. and Chou, Philip A.},
+volume = {25},
+number = {8},
+year = {2016},
+pages = {3947 - 3956},
+issn = {10577149},
+abstract = {In free-viewpoint video, there is a recent trend to represent scene objects as solids rather than using multiple depth maps. Point clouds have been used in computer graphics for a long time, and with the recent possibility of real-time capturing and rendering, point clouds have been favored over meshes in order to save computation. Each point in the cloud is associated with its 3D position and its color. We devise a method to compress the colors in point clouds, which is based on a hierarchical transform and arithmetic coding. The transform is a hierarchical sub-band transform that resembles an adaptive variation of a Haar wavelet. The arithmetic encoding of the coefficients assumes Laplace distributions, one per sub-band. The Laplace parameter for each distribution is transmitted to the decoder using a custom method. The geometry of the point cloud is encoded using the well-established octtree scanning. Results show that the proposed solution performs comparably with the current state-of-the-art, in many occasions outperforming it, while being much more computationally efficient. We believe this paper represents the state of the art in intra-frame compression of point clouds for real-time 3D video.<br/> &copy; 1992-2012 IEEE.},
+key = {Image compression},
+keywords = {Laplace transforms;Three dimensional computer graphics;},
+note = {Free-viewpoint video;Immersive;Point cloud;RAHT;Real time;},
+URL = {http://dx.doi.org/10.1109/TIP.2016.2575005},
+} 
+
+
+159.
+@inproceedings{20195207921460 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Learning Convolutional Transforms for Lossy Point Cloud Geometry Compression},
+journal = {Proceedings - International Conference on Image Processing, ICIP},
+author = {Quach, Maurice and Valenzise, Giuseppe and Dufaux, Frederic},
+volume = {2019-September},
+year = {2019},
+pages = {4320 - 4324},
+issn = {15224880},
+address = {Taipei, Taiwan},
+abstract = {Efficient point cloud compression is fundamental to enable the deployment of virtual and mixed reality applications, since the number of points to code can range in the order of millions. In this paper, we present a novel data-driven geometry compression method for static point clouds based on learned convolutional transforms and uniform quantization. We perform joint optimization of both rate and distortion using a trade-off parameter. In addition, we cast the decoding process as a binary classification of the point cloud occupancy map. Our method outperforms the MPEG reference solution in terms of rate-distortion on the Microsoft Voxelized Upper Bodies dataset with 51.5% BDBR savings on average. Moreover, while octree-based methods face exponential diminution of the number of points at low bitrates, our method still produces high resolution outputs even at low bitrates. Code and supplementary material are available at https://github.com/mauriceqch/pcc-geo-cnn.<br/> &copy; 2019 IEEE.},
+URL = {http://dx.doi.org/10.1109/ICIP.2019.8803413},
+} 
+
+
+160.
+@inproceedings{20210309772872 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Improved Deep Point Cloud Geometry Compression},
+journal = {IEEE 22nd International Workshop on Multimedia Signal Processing, MMSP 2020},
+author = {Quach, Maurice and Valenzise, Giuseppe and Dufaux, Frederic},
+year = {2020},
+pages = {1-6}
+address = {Virtual, Tampere, Finland},
+abstract = {Point clouds have been recognized as a crucial data structure for 3D content and are essential in a number of applications such as virtual and mixed reality, autonomous driving, cultural heritage, etc. In this paper, we propose a set of contributions to improve deep point cloud compression, i.e.: using a scale hyperprior model for entropy coding; employing deeper transforms; a different balancing weight in the focal loss; optimal thresholding for decoding; and sequential model training. In addition, we present an extensive ablation study on the impact of each of these factors, in order to provide a better understanding about why they improve RD performance. An optimal combination of the proposed improvements achieves BD-PSNR gains over G-PCC trisoup and octree of 5.50 (6.48) dB and 6.84 (5.95) dB, respectively, when using the point-to-point (point-to-plane) metric. Code is available at https://github.com/mauriceqch/pcc_geo_cnn_v2.<br/> &copy; 2020 IEEE.},
+key = {Mixed reality},
+keywords = {Computer vision;Three dimensional computer graphics;},
+note = {Autonomous driving;Balancing weight;Cultural heritages;Entropy coding;Optimal combination;Optimal thresholding;Point to point;Sequential model;},
+URL = {http://dx.doi.org/10.1109/MMSP48831.2020.9287077},
+} 
+
+
+161.
+@article{20210409805575 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Lossy Point Cloud Geometry Compression via End-to-End Learning},
+journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+author = {Wang, Jianqiang and Zhu, Hao and Liu, Haojie and Ma, Zhan},
+volume = {31},
+number = {12},
+year = {2021},
+pages = {4909 - 4923},
+issn = {10518215},
+abstract = {<div data-language="eng" data-ev-field="abstract">This paper presents a novel end-to-end Learned Point Cloud Geometry Compression (a.k.a., Learned-PCGC) system, leveraging stacked Deep Neural Networks (DNN) based Variational AutoEncoder (VAE) to efficiently compress the Point Cloud Geometry (PCG). In this systematic exploration, PCG is first voxelized, and partitioned into non-overlapped 3D cubes, which are then fed into stacked 3D convolutions for compact latent feature and hyperprior generation. Hyperpriors are used to improve the conditional probability modeling of entropy-coded latent features. A Weighted Binary Cross-Entropy (WBCE) loss is applied in training while an adaptive thresholding is used in inference to remove false voxels and reduce the distortion. Objectively, our method exceeds the Geometry-based Point Cloud Compression (G-PCC) algorithm standardized by the Moving Picture Experts Group (MPEG) with a significant performance margin, e.g., at least 60% BD-Rate (Bj&ouml;ntegaard Delta Rate) savings, using common test datasets, and other public datasets. Subjectively, our method has presented better visual quality with smoother surface reconstruction and appealing details, in comparison to all existing MPEG standard compliant PCC methods. Our method requires about 2.5 MB parameters in total, which is a fairly small size for practical implementation, even on embedded platform. Additional ablation studies analyze a variety of aspects (e.g., thresholding, kernels, etc) to examine the generalization, and application capacity of our Learned-PCGC. We would like to make all materials publicly accessible at https://njuvision.github.io/PCGCv1/ for reproducible research.<br/></div> &copy; 1991-2012 IEEE.},
+key = {Convolution},
+keywords = {Deep neural networks;Geometry;Classification (of information);Motion Picture Experts Group standards;Entropy;},
+note = {Adaptive thresholding;Conditional probabilities;Embedded platforms;Moving picture experts group;Publicly accessible;Reproducible research;Systematic exploration;Visual qualities;},
+URL = {http://dx.doi.org/10.1109/TCSVT.2021.3051377},
+} 
+
+
+162.
+@inproceedings{20212110387978 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Multiscale Point Cloud Geometry Compression},
+journal = {Data Compression Conference Proceedings},
+author = {Wang, Jianqiang and Ding, Dandan and Li, Zhu and Ma, Zhan},
+volume = {2021-March},
+year = {2021},
+pages = {73 - 82},
+issn = {10680314},
+address = {Snowbird, UT, United states},
+abstract = {<div data-language="eng" data-ev-field="abstract">Recent years have witnessed the growth of point cloud based applications for both immersive media as well as 3D sensing for auto-driving, because of its realistic and fine-grained representation of 3D objects and scenes. However, it is a challenging problem to compress sparse, unstructured, and high-precision 3D points for efficient communication. In this paper, leveraging the sparsity nature of the point cloud, we propose a multiscale end-to-end learning framework that hierarchically reconstructs the 3D Point Cloud Geometry (PCG) via progressive re-sampling. The framework is developed on top of a sparse convolution based autoencoder for point cloud compression and reconstruction. For the input PCG which has only the binary occupancy attribute, our framework translates it to a down-scaled point cloud at the bottleneck layer which possesses both geometry and associated feature attributes. Then, the geometric occupancy is losslessly compressed using an octree codec and the feature attributes are lossy compressed using a learned probabilistic context model. Compared with the state-of-the-art Video-based Point Cloud Compression (V-PCC) and Geometry-based PCC (G-PCC) schemes standardized by the Moving Picture Experts Group (MPEG), our method achieves more than 40% and 70% BD-Rate (BjOntegaard Delta Rate) reduction, respectively. We would like to make all materials publicly accessible at http://njuvision.github.io/PCGCv2/for reproducible research.<br/></div> &copy; 2021 IEEE.},
+key = {Geometry},
+keywords = {Computer vision;},
+note = {Associated feature;Efficient communications;Feature attributes;Learning frameworks;Moving picture experts group;Publicly accessible;Reproducible research;State of the art;},
+URL = {http://dx.doi.org/10.1109/DCC50243.2021.00015},
+} 
+
+
+163.
+@inproceedings{20194607684322 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {3D point cloud geometry compression on deep learning},
+journal = {MM 2019 - Proceedings of the 27th ACM International Conference on Multimedia},
+author = {Huang, Tianxin and Liu, Yong},
+year = {2019},
+pages = {890 - 898},
+address = {Nice, France},
+abstract = {3D point cloud presentation has been widely used in computer vision, automatic driving, augmented reality, smart cities and virtual reality. 3D point cloud compression method with higher compression ratio and tiny loss is the key to improve data transportation efficiency. In this paper, we propose a new 3D point cloud geometry compression method based on deep learning, also an auto-encoder performing better than other networks in detail reconstruction. It can reach much higher compression ratio than the state-of-art while keeping tolerable loss. It also supports parallel compressing multiple models by GPU, which can improve processing efficiency greatly. The compression process is composed of two parts. Firstly, Raw data is compressed into codeword by extracting feature of raw model with encoder. Then, the codeword is further compressed with sparse coding. Decompression process is implemented in reverse order. Codeword is recovered and fed into decoder to reconstruct point cloud. Detail reconstruction ability is improved by a hierarchical structure in our decoder. Latter outputs are grown from former fuzzier outputs. In this way, details are added to former output by latter layers step by step to make a more precise prediction. We compare our method with PCL compression and Draco compression on ShapeNet40 part dataset. Our method may be the first deep learning-based point cloud compression algorithm. The experiments demonstrate it is superior to former common compression algorithms with large compression ratio, which can also reserve original shapes with tiny loss.<br/> &copy; 2019 Association for Computing Machinery.},
+key = {Geometry},
+keywords = {Image reconstruction;Augmented reality;Virtual reality;Signal encoding;Deep learning;Decoding;Efficiency;Automobile drivers;},
+note = {3D point cloud;Auto encoders;Compression algorithms;Compression process;Geometry compression;Hierarchical structures;Higher compression ratios;Transportation efficiency;},
+URL = {http://dx.doi.org/10.1145/3343031.3351061},
+} 
+
+
+164.
+@inproceedings{20203709163298 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Lossy Geometry Compression of 3D Point Cloud Data Via An Adaptive Octree-Guided Network},
+journal = {Proceedings - IEEE International Conference on Multimedia and Expo},
+author = {Wen, Xuanzheng and Wang, Xu and Hou, Junhui and Ma, Lin and Zhou, Yu and Jiang, Jianmin},
+volume = {2020-July},
+year = {2020},
+pages = {1-6},
+issn = {19457871},
+address = {London, United kingdom},
+abstract = {In this paper, we propose a deep learning based framework for point cloud geometry lossy compression via hybrid representation of point cloud. First, the input raw 3D point cloud data is adaptively decomposed into non-overlapping local patches through adaptive Octree decomposition and clustering. Second, a framework of point cloud auto-encoder network with quantization layer is proposed for learning compact latent feature representation from each patch. Specifically, the proposed point cloud auto-encoder networks with different input size are trained for achieving optimal rate-distortion (RD) performance. Final, bitstream specifications of proposed compression systems with additional signaled meta-data and header information are designed to support parallel decoding and successive reconstruction. Experimental results shows that our proposed method can achieve 40.20% bitrate saving in average than the existing standard Geometry based Point Cloud Compression (G-PCC) codec.<br/> &copy; 2020 IEEE.},
+key = {Geometry},
+keywords = {Deep learning;Signal distortion;Network coding;Image coding;Network layers;Electric distortion;},
+note = {Bit-rate savings;Compression system;Feature representation;Geometry compression;Hybrid representations;Lossy compressions;Octree decomposition;Parallel decoding;},
+URL = {http://dx.doi.org/10.1109/ICME46284.2020.9102866},
+} 
+
+
+165.
+@article{20210809973008 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Deep Compression for Dense Point Cloud Maps},
+journal = {IEEE Robotics and Automation Letters},
+author = {Wiesmann, Louis and Milioto, Andres and Chen, Xieyuanli and Stachniss, Cyrill and Behley, Jens},
+volume = {6},
+number = {2},
+year = {2021},
+pages = {2060 - 2067},
+issn = {23773766},
+abstract = {Many modern robotics applications rely on 3D maps of the environment. Due to the large memory requirements of dense 3D maps, compression techniques are often necessary to store or transmit 3D maps efficiently. In this work, we investigate the problem of compressing dense 3D point cloud maps such as those obtained from an autonomous vehicle in large outdoor environments. We tackle the problem by learning a set of local feature descriptors from which the point cloud can be reconstructed efficiently and effectively. We propose a novel deep convolutional autoencoder architecture that directly operates on the points themselves so that we avoid voxelization. Additionally, we propose a deconvolution operator to upsample point clouds, which allows us to decompress to an arbitrary density. Our experiments show that our learned compression achieves better reconstructions at the same bit rate compared to other state-of-the-art compression algorithms. We furthermore demonstrate that our approach generalizes well to different LiDAR sensors. For example, networks learned on maps generated from KITTI point clouds still achieve state-of-the-art compression results for maps generated from nuScences point clouds.<br/> &copy; 2016 IEEE.},
+key = {Deep learning},
+keywords = {Optical radar;Intelligent robots;},
+note = {3D point cloud;Compression algorithms;Compression techniques;LIDAR sensors;Memory requirements;Outdoor environment;Robotics applications;State of the art;},
+URL = {http://dx.doi.org/10.1109/LRA.2021.3059633},
+} 
+
+
+166.
+@inproceedings{20221011744197 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {POINT CLOUD GEOMETRY COMPRESSION VIA NEURAL GRAPH SAMPLING},
+journal = {Proceedings - International Conference on Image Processing, ICIP},
+author = {Gao, Linyao and Fan, Tingyu and Wang, Jianqiang and Xu, Yiling and Sun, Jun and Ma, Zhan},
+volume = {2021-September},
+year = {2021},
+pages = {3373 - 3377},
+issn = {15224880},
+address = {Anchorage, AK, United states},
+abstract = {<div data-language="eng" data-ev-field="abstract">Compressing point cloud geometry (PCG) efficiently is of great interests for enabling abundant networked applications, because PCG is a promising representation to precisely illustrate arbitrary-shaped 3D objects and relevant physical scenes. To well exploit the unconstrained geometric correlation of input PCG, a three-step neural graph sampling (NGS) is developed. First, we construct the local graph of each point using its K nearest neighbors according to the Euclidean distance metric; Second, for each local graph, its graph center point expands associated feature attribute by aggregating neighbor weights via point-wise dynamic filter; We then perform attention-based sampling to select a subset of points to well represent input points. The proposed NGS is embedded into an end-to-end analysis/synthesis-based variational autoencoder (VAE), with which the encoder applies multiscale NGS to extract latent keypoints that are augmented with neighbor structures and compressed at bottleneck leveraging the hyperpriors for accurate entropy modeling, and the decoder directly uses layered convolutions to refine progressively for the reconstruction of final point cloud. Note that all computations are fulfilled using point-wise convolution, making our solution an attractive approach in practice. Experimental results demonstrate that the proposed method using NGS mechanism outperforms the state-of-the-art point-based PCG compression methods by more than 2&times; BD-Rate (Bj&oslash;ntegaard Delta Rate) gains, and several orders of magnitude gains over the MPEG G-PCC across all testing categories on ShapeNetCorev2 dataset.<br/></div> &copy; 2021 IEEE},
+key = {Convolution},
+keywords = {Computer vision;Dynamics;Geometry;Nearest neighbor search;Statistical tests;},
+note = {Attention-based sampling;Cloud geometry;Dynamic filter;Local neighborhood graph;Local neighborhoods;Neighborhood graphs;Point cloud geometry;Point wise;Point-clouds;Point-wise convolution;},
+URL = {http://dx.doi.org/10.1109/ICIP42928.2021.9506631},
+} 
+
+
+167.
+@inproceedings{20204409440223 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {OctSqueeze: Octree-structured entropy model for lidar compression},
+journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+author = {Huang, Lila and Wang, Shenlong and Wong, Kelvin and Liu, Jerry and Urtasun, Raquel},
+year = {2020},
+pages = {1310 - 1320},
+issn = {10636919},
+address = {Virtual, Online, United states},
+abstract = {We present a novel deep compression algorithm to reduce the memory footprint of LiDAR point clouds. Our method exploits the sparsity and structural redundancy between points to reduce the bitrate. Towards this goal, we first encode the LiDAR points into an octree, a data-efficient structure suitable for sparse point clouds. We then design a tree-structured conditional entropy model that models the probabilities of the octree symbols to encode the octree into a compact bitstream. We validate the effectiveness of our method over two large-scale datasets. The results demonstrate that our approach reduces the bitrate by 10-20% at the same reconstruction quality, compared to the previous state-of-the-art. Importantly, we also show that for the same bitrate, our approach outperforms other compression algorithms when performing downstream 3D segmentation and detection tasks using compressed representations. Our algorithm can be used to reduce the onboard and offboard storage of LiDAR points for applications such as self-driving cars, where a single vehicle captures 84 billion points per day.<br/> &copy; 2020 IEEE},
+key = {Optical radar},
+keywords = {Computer vision;Large dataset;Encoding (symbols);Entropy;Digital storage;},
+note = {Compression algorithms;Conditional entropy;Large-scale datasets;Lidar point clouds;Reconstruction quality;Sparse point cloud;State of the art;Structural redundancy;},
+URL = {http://dx.doi.org/10.1109/CVPR42600.2020.00139},
+} 
+
+
+
+168.
+@inproceedings{20212610555312 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {MuSCLE: Multi sweep compression of LiDAR using deep entropy models},
+journal = {Advances in Neural Information Processing Systems},
+author = {Biswas, Sourav and Liu, Jerry and Wong, Kelvin and Wang, Shenlong and Urtasun, Raquel},
+volume = {2020-December},
+year = {2020},
+pages = {22170–22181},
+issn = {10495258},
+address = {Virtual, Online},
+abstract = {<div data-language="eng" data-ev-field="abstract">We present a novel compression algorithm for reducing the storage of LiDAR sensor data streams. Our model exploits spatio-temporal relationships across multiple LiDAR sweeps to reduce the bitrate of both geometry and intensity values. Towards this goal, we propose a novel conditional entropy model that models the probabilities of the octree symbols by considering both coarse level geometry and previous sweeps&rsquo; geometric and intensity information. We then use the learned probability to encode the full data stream into a compact one. Our experiments demonstrate that our method significantly reduces the joint geometry and intensity bitrate over prior state-of-the-art LiDAR compression methods, with a reduction of 7&ndash;17% and 6&ndash;19% on the UrbanCity and SemanticKITTI datasets respectively.<br/></div> &copy; 2020 Neural information processing systems foundation. All rights reserved.},
+key = {Geometry},
+keywords = {Digital storage;Entropy;Optical radar;},
+note = {Compression algorithms;Compression methods;Conditional entropy;Intensity information;Intensity values;Joint geometry;Spatio-temporal relationships;State of the art;},
+
+} 
+
+
+
+169.
+@inproceedings{20220411510363 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {VoxelContext-Net: An Octree based Framework for Point Cloud Compression},
+journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+author = {Que, Zizheng and Lu, Guo and Xu, Dong},
+year = {2021},
+pages = {6038 - 6047},
+issn = {10636919},
+address = {Virtual, Online, United states},
+abstract = {<div data-language="eng" data-ev-field="abstract">In this paper, we propose a two-stage deep learning framework called VoxelContext-Net for both static and dynamic point cloud compression. Taking advantages of both octree based methods and voxel based schemes, our approach employs the voxel context to compress the octree structured data. Specifically, we first extract the local voxel representation that encodes the spatial neighbouring context information for each node in the constructed octree. Then, in the entropy coding stage, we propose a voxel context based deep entropy model to compress the symbols of non-leaf nodes in a lossless way. Furthermore, for dynamic point cloud compression, we additionally introduce the local voxel representations from the temporal neighbouring point clouds to exploit temporal dependency. More importantly, to alleviate the distortion from the octree construction procedure, we propose a voxel context based 3D coordinate refinement method to produce more accurate reconstructed point cloud at the decoder side, which is applicable to both static and dynamic point cloud compression. The comprehensive experiments on both static and dynamic point cloud benchmark datasets(e.g., ScanNet and Semantic KITTI) clearly demonstrate the effectiveness of our newly proposed method VoxelContext-Net for 3D point cloud geometry compression.<br/></div> &copy; 2021 IEEE},
+key = {Semantics},
+keywords = {Deep learning;Computer vision;Entropy;},
+note = {Context information;Context-based;Entropy coding;Entropy model;Learning frameworks;Octrees;Point-clouds;Statics and dynamics;Structured data;Voxel representation;},
+URL = {http://dx.doi.org/10.1109/CVPR46437.2021.00598},
+} 
+
+
+
+170.
+@unpublished{20220031030 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {OctAttention: Octree-Based Large-Scale Contexts Model for Point Cloud Compression},
+journal = {the AAAI Conference on Artificial Intelligence},
+author = {Fu, Chunyang and Li, Ge and Song, Rui and Gao, Wei and Liu, Shan},
+year = {2022},
+issn = {23318422},
+pages = {625-633}
+abstract = {<div data-language="eng" data-ev-field="abstract">In point cloud compression, sufficient contexts are significant for modeling the point cloud distribution. However, the contexts gathered by the previous voxel-based methods decrease when handling sparse point clouds. To address this problem, we propose a multiple-contexts deep learning framework called OctAttention employing the octree structure, a memory-efficient representation for point clouds. Our approach encodes octree symbol sequences in a lossless way by gathering the information of sibling and ancestor nodes. Expressly, we first represent point clouds with octree to reduce spatial redundancy, which is robust for point clouds with different resolutions. We then design a conditional entropy model with a large receptive field that models the sibling and ancestor contexts to exploit the strong dependency among the neighboring nodes and employ an attention mechanism to emphasize the correlated nodes in the context. Furthermore, we introduce a mask operation during training and testing to make a trade-off between encoding time and performance. Compared to the previous state-of-the-art works, our approach obtains a 10%-35% BD-Rate gain on the LiDAR benchmark (e.g. SemanticKITTI) and object point cloud dataset (e.g. MPEG 8i, MVUB), and saves 95% coding time compared to the voxel-based baseline. The code is available at https://github.com/zb12138/OctAttention.<br/></div> Copyright &copy; 2022, The Authors. All rights reserved.},
+key = {Encoding (symbols)},
+keywords = {Deep learning;Economic and social effects;},
+note = {Cloud distributions;Context models;Large-scales;Learning frameworks;Memory efficient;Multiple contexts;Octrees;Point-clouds;Sparse point cloud;Symbol sequences;},
+URL = {http://dx.doi.org/10.48550/arXiv.2202.06028},
+} 
+
+
+171.
+@article{20225113273592 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Sparse Tensor-Based Multiscale Representation for Point Cloud Geometry Compression},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+author = {Wang, Jianqiang and Ding, Dandan and Li, Zhu and Feng, Xiaoxing and Cao, Chuntong and Ma, Zhan},
+year = {2022},
+pages = {1 - 18},
+issn = {01628828},
+abstract = {<div data-language="eng" data-ev-field="abstract">This study develops a unified Point Cloud Geometry (PCG) compression method through the processing of multiscale sparse tensor-based voxelized PCG. We call this compression method SparsePCGC. The proposed SparsePCGC is a low complexity solution because it only performs the convolutions on sparsely-distributed Most-Probable Positively-Occupied Voxels (MP-POV). The multiscale representation also allows us to compress scale-wise MP-POVs by exploiting cross-scale and same-scale correlations extensively and flexibly. The overall compression efficiency highly depends on the accuracy of estimated occupancy probability for each MP-POV. Thus, we first design the Sparse Convolution-based Neural Network (SparseCNN) which stacks sparse convolutions and voxel sampling to best characterize and embed spatial correlations. We then develop the SparseCNN-based Occupancy Probability Approximation (SOPA) model to estimate the occupancy probability either in a single-stage manner only using the cross-scale correlation, or in a multi-stage manner by exploiting stage-wise correlation among same-scale neighbors. Besides, we also suggest the SparseCNN based Local Neighborhood Embedding (SLNE) to aggregate local variations as spatial priors in feature attribute to improve the SOPA. Our unified approach not only shows state-of-the-art performance in both lossless and lossy compression modes across a variety of datasets including the dense object PCGs (8iVFB, Owlii, MUVB) and sparse LiDAR PCGs (KITTI, Ford) when compared with standardized MPEG G-PCC and other prevalent learning-based schemes, but also has low complexity which is attractive to practical applications.<br/></div> IEEE},
+key = {Embeddings},
+keywords = {Complex networks;Convolution;Geometry;Tensors;},
+note = {Cloud geometry;Embeddings;Geometry compression;Multiscale representations;Neighborhood embedding;Neighbourhood;Occupancy probability approximation;Point cloud geometry compression;Point-clouds;Sparse convolution;Sparse tensors;},
+URL = {http://dx.doi.org/10.1109/TPAMI.2022.3225816},
+} 
+
+
+
+172.
+@inproceedings{20224613120442 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {3DAC: Learning Attribute Compression for Point Clouds},
+journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+author = {Fang, Guangchi and Hu, Qingyong and Wang, Hanyun and Xu, Yiling and Guo, Yulan},
+volume = {2022-June},
+year = {2022},
+pages = {14799 - 14808},
+issn = {10636919},
+address = {New Orleans, LA, United states},
+abstract = {<div data-language="eng" data-ev-field="abstract">We study the problem of attribute compression for large-scale unstructured 3D point clouds. Through an in-depth exploration of the relationships between different encoding steps and different attribute channels, we introduce a deep compression network, termed 3DAC, to explicitly compress the attributes of 3D point clouds and reduce storage usage in this paper. Specifically, the point cloud attributes such as color and reflectance are firstly converted to transform coefficients. We then propose a deep entropy model to model the probabilities of these coefficients by considering information hidden in attribute transforms and previous encoded attributes. Finally, the estimated probabilities are used to further compress these transform coefficients to a final attributes bitstream. Extensive experiments conducted on both indoor and outdoor large-scale open point cloud datasets, including ScanNet and SemanticKITTI, demonstrated the superior compression rates and reconstruction quality of the proposed method.<br/></div> &copy; 2022 IEEE.},
+URL = {http://dx.doi.org/10.1109/CVPR52688.2022.01440},
+} 
+
+
+173.
+@inproceedings{20204409427788 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Deep implicit volume compression},
+journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+author = {Tang, Danhang and Singh, Saurabh and Chou, Philip A. and Hane, Christian and Dou, Mingsong and Fanello, Sean and Taylor, Jonathan and Davidson, Philip and Guleryuz, Onur G. and Zhang, Yinda and Izadi, Shahram and Tagliasacchi, Andrea and Bouaziz, Sofien and Keskin, Cem},
+year = {2020},
+pages = {1290 - 1300},
+issn = {10636919},
+address = {Virtual, Online, United states},
+abstract = {We describe a novel approach for compressing truncated signed distance fields (TSDF) stored in 3D voxel grids, and their corresponding textures. To compress the TSDF, our method relies on a block-based neural network architecture trained end-to-end, achieving state-of-the-art rate-distortion trade-off. To prevent topological errors, we losslessly compress the signs of the TSDF, which also upper bounds the reconstruction error by the voxel size. To compress the corresponding texture, we designed a fast block-based UV parameterization, generating coherent texture maps that can be effectively compressed using existing video compression algorithms. We demonstrate the performance of our algorithms on two 4D performance capture datasets, reducing bitrate by 66% for the same distortion, or alternatively reducing the distortion by 50% for the same bitrate, compared to the state-of-the-art.<br/> &copy; 2020 IEEE.},
+key = {Textures},
+keywords = {Computer vision;Electric distortion;Network architecture;Signal distortion;Economic and social effects;Image coding;Image compression;},
+note = {Block-based neural networks;Performance capture;Rate distortion trade-off;Reconstruction error;Signed distance fields;Topological errors;Video compression algorithms;Volume compression;},
+URL = {http://dx.doi.org/10.1109/CVPR42600.2020.00137},
+} 
+
+
+174.
+@article{tang2018real,
+  title={Real-time compression and streaming of 4d performances},
+  author={Tang, Danhang and Dou, Mingsong and Lincoln, Peter and Davidson, Philip and Guo, Kaiwen and Taylor, Jonathan and Fanello, Sean and Keskin, Cem and Kowdle, Adarsh and Bouaziz, Sofien and others},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={37},
+  number={6},
+  pages={1--11},
+  year={2018},
+  publisher={ACM New York, NY, USA},
+  URL = {https://doi.org/10.1145/3272127.3275096},
+  
+}
+
+
+175.
+@inproceedings{20191106642243 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Deep Marching Cubes: Learning Explicit Surface Representations},
+journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+author = {Liao, Yiyi and Donne, Simon and Geiger, Andreas},
+year = {2018},
+pages = {2916 - 2925},
+issn = {10636919},
+address = {Salt Lake City, UT, United states},
+abstract = {Existing learning based solutions to 3D surface prediction cannot be trained end-to-end as they operate on intermediate representations (e.g., TSDF) from which 3D surface meshes must be extracted in a post-processing step (e.g., via the marching cubes algorithm). In this paper, we investigate the problem of end-to-end 3D surface prediction. We first demonstrate that the marching cubes algorithm is not differentiable and propose an alternative differentiable formulation which we insert as a final layer into a 3D convolutional neural network. We further propose a set of loss functions which allow for training our model with sparse point supervision. Our experiments demonstrate that the model allows for predicting sub-voxel accurate 3D shapes of arbitrary topology. Additionally, it learns to complete shapes and to separate an object's inside from its outside even in the presence of sparse and incomplete ground truth. We investigate the benefits of our approach on the task of inferring shapes from 3D point clouds. Our model is flexible and can be combined with a variety of shape encoder and shape inference techniques.<br/> &copy; 2018 IEEE.},
+key = {Geometry},
+keywords = {Computer vision;Forecasting;Multilayer neural networks;Deep learning;Topology;},
+note = {3D point cloud;3D surface meshes;Arbitrary topology;Explicit surface;Intermediate representations;Marching Cubes algorithm;Post processing;Shape inference;},
+URL = {http://dx.doi.org/10.1109/CVPR.2018.00308},
+} 
+
+
+176.
+@inproceedings{20200508114495 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Deepsdf: Learning continuous signed distance functions for shape representation},
+journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+author = {Park, Jeong Joon and Florence, Peter and Straub, Julian and Newcombe, Richard and Lovegrove, Steven},
+volume = {2019-June},
+year = {2019},
+pages = {165 - 174},
+issn = {10636919},
+address = {Long Beach, CA, United states},
+abstract = {Computer graphics, 3D computer vision and robotics communities have produced multiple approaches to representing 3D geometry for rendering and reconstruction. These provide trade-offs across fidelity, efficiency and compression capabilities. In this work, we introduce DeepSDF, a learned continuous Signed Distance Function (SDF) representation of a class of shapes that enables high quality shape representation, interpolation and completion from partial and noisy 3D input data. DeepSDF, like its classical counterpart, represents a shape's surface by a continuous volumetric field: the magnitude of a point in the field represents the distance to the surface boundary and the sign indicates whether the region is inside (-) or outside (+) of the shape, hence our representation implicitly encodes a shape's boundary as the zero-level-set of the learned function while explicitly representing the classification of space as being part of the shapes interior or not. While classical SDF's both in analytical or discretized voxel form typically represent the surface of a single shape, DeepSDF can represent an entire class of shapes. Furthermore, we show state-of-the-art performance for learned 3D shape representation and completion while reducing the model size by an order of magnitude compared with previous work.<br/> &copy; 2019 IEEE.},
+key = {Economic and social effects},
+keywords = {Deep learning;Computer vision;Three dimensional computer graphics;3D modeling;},
+note = {3D shape representation;Classical counterpart;Multi-views;Representation Learning;Shape representation;Signed distance function;State-of-the-art performance;Surface boundaries;},
+URL = {http://dx.doi.org/10.1109/CVPR.2019.00025},
+} 
+
+
+
+181.
+@article{20202808916847 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {A Survey on Adaptive 360 Video Streaming: Solutions, Challenges and Opportunities},
+journal = {IEEE Communications Surveys and Tutorials},
+author = {Yaqoob, Abid and Bi, Ting and Muntean, Gabriel-Miro},
+volume = {22},
+number = {4},
+year = {2020},
+pages = {2801 - 2838},
+issn = {1553877X},
+abstract = {Omnidirectional or 360&deg; video is increasingly being used, mostly due to the latest advancements in immersive Virtual Reality (VR) technology. However, its wide adoption is hindered by the higher bandwidth and lower latency requirements than associated with traditional video content delivery. Diverse researchers propose and design solutions that help support an immersive visual experience of 360&deg; video, primarily when delivered over a dynamic network environment. This paper presents the state-of-the-art on adaptive 360&deg; video delivery solutions considering end-to-end video streaming in general and then specifically of 360&deg; video delivery. Current and emerging solutions for adaptive 360&deg; video streaming, including viewport-independent, viewport-dependent, and tile-based schemes are presented. Next, solutions for network-assisted unicast and multicast streaming of 360&deg; video content are discussed. Different research challenges for both on-demand and live 360&deg; video streaming are also analyzed. Several proposed standards and technologies and top international research projects are then presented. We demonstrate the ongoing standardization efforts for 360&deg; media services that ensure interoperability and immersive media deployment on a massive scale. Finally, the paper concludes with a discussion about future research opportunities enabled by 360&deg; video.<br/> &copy; 1998-2012 IEEE.},
+key = {Virtual reality},
+keywords = {Motion Picture Experts Group standards;HTTP;Interoperability;Video recording;Video streaming;},
+note = {Dynamic network environment;Immersive virtual reality;International researches;Multicast streaming;Research challenges;Research opportunities;Video content delivery;Visual experiences;},
+URL = {http://dx.doi.org/10.1109/COMST.2020.3006999},
+} 
+
+
+182.
+@book{snyder1997flattening,
+  title={Flattening the earth: two thousand years of map projections},
+  author={Snyder, John P},
+  year={1997},
+  publisher={University of Chicago Press},
+  ISBN_13={9780226767475},
+  ISBN_10={0226767477},
+}
+
+
+
+183.
+@article{20092412128165 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {The rhombic dodecahedron map: An efficient scheme for encoding panoramic video},
+journal = {IEEE Transactions on Multimedia},
+author = {Fu, Chi-Wing and Wan, Liang and Wong, Tien-Tsin and Leung, Chi-Sing},
+volume = {11},
+number = {4},
+year = {2009},
+pages = {634 - 644},
+issn = {15209210},
+abstract = {Omnidirectional videos are usually mapped to planar domain for encoding with off-the-shelf video compression standards. However, existing work typically neglects the effect of the sphere-to-plane mapping. In this paper, we show that by carefully designing the mapping, we can improve the visual quality, stability and compression efficiency of encoding omnidirectional videos. Here we propose a novel mapping scheme, known as the rhombic dodecahedron map (RD map) to represent data over the spherical domain. By using a family of skew great circles as the subdivision kernel, the RD map not only produces a sampling pattern with very low discrepancy, it can also support a highly efficient data indexing mechanism over the spherical domain. Since the proposed map is quad-based, geodesic-aligned, and of very low area and shape distortion, we can reliably apply 2-D wavelet-based and DCT-based encoding methods that are originally designated to planar perspective videos. At the end, we perform a series of analysis and experiments to investigate and verify the effectiveness of the proposed method; with its ultra-fast data indexing capability, we show that we can playback omnidirectional videos with very high frame rates on conventional PCs with GPU support. &copy; 2009 IEEE.<br/>},
+key = {Graphics processing unit},
+keywords = {Computer graphics;Encoding (symbols);Mapping;Signal encoding;Video signal processing;Image compression;Indexing (of information);Computer graphics equipment;Spheres;Image coding;Program processors;},
+note = {Compression efficiency;Indexing mechanisms;Omnidirectional video;Panoramic video;Rhombic dodecahedron;Shape distortions;Video compression standards;Video encodings;},
+URL = {http://dx.doi.org/10.1109/TMM.2009.2017626},
+} 
+
+
+184.
+@inproceedings{20171203452979 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Efficient coding of 360-degree pseudo-cylindrical panoramic video for virtual reality applications},
+journal = {Proceedings - 2016 IEEE International Symposium on Multimedia, ISM 2016},
+author = {Youvalari, Ramin Ghaznavi and Aminlou, Alireza and Hannuksela, Miska M. and Gabbouj, Moncef},
+year = {2016},
+pages = {525 - 528},
+address = {San Jose, CA, United states},
+abstract = {Pseudo-cylindrical panoramas represent the data distribution of spherical coordinates closely in two-dimensional domain due to the equidistant sampling of 360-degree scene. Therefore, unlike the cylindrical projections, they do not suffer from the over stretching in the polar areas. However, due to the non-rectangular format in effective picture area and sharp edges at its borders, the compression performance is inefficient. In this paper, we propose two methods which improve the compression performance of both intra-frame and inter-frame coding of pseudo-cylindrical panoramic content and meanwhile reduce the coding artifacts. In the intra-frame coding method, border edges are smoothed by modifying the content of the image in the non-effective picture area, which are cropped at the receiver side. In the inter-frame coding method, gaining the benefit of 360-degree property of the content, non-effective picture area of reference frames at border is filled with the content of the effective picture area from the opposite border to enhance the performance of motion compensation.<br/> &copy; 2016 IEEE.},
+key = {Virtual reality},
+keywords = {Video signal processing;Codes (symbols);Motion compensation;Image coding;},
+note = {Compression performance;Cylindrical panoramas;Cylindrical projection;Data distribution;Inter-frame coding;Intraframe coding;Spherical coordinates;Two-dimensional domain;},
+URL = {http://dx.doi.org/10.1109/ISM.2016.74},
+} 
+
+
+
+185.
+@inproceedings{20191106642401 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Learning Compressible 360 Video Isomers},
+journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+author = {Su, Yu-Chuan and Grauman, Kristen},
+year = {2018},
+pages = {7824 - 7833},
+issn = {10636919},
+address = {Salt Lake City, UT, United states},
+abstract = {Standard video encoders developed for conventional narrow field-of-view video are widely applied to 360&deg; video as well, with reasonable results. However, while this approach commits arbitrarily to a projection of the spherical frames, we observe that some orientations of a 360&deg; video, once projected, are more compressible than others. We introduce an approach to predict the sphere rotation that will yield the maximal compression rate. Given video clips in their original encoding, a convolutional neural network learns the association between a clip's visual content and its compressibility at different rotations of a cubemap projection. Given a novel video, our learning-based approach efficiently infers the most compressible direction in one shot, without repeated rendering and compression of the source video. We validate our idea on thousands of video clips and multiple popular video codecs. The results show that this untapped dimension of 360&deg; compression has substantial potential-'good' rotations are typically 8-10% more compressible than bad ones, and our learning approach can predict them reliably 82% of the time.<br/> &copy; 2018 IEEE.},
+key = {Isomers},
+keywords = {Video cameras;Neural networks;Signal encoding;},
+note = {Compression rates;Field of views;Learning approach;Learning-based approach;Video clips;Video codecs;Video encoder;Visual content;},
+URL = {http://dx.doi.org/10.1109/CVPR.2018.00816},
+} 
+
+
+
+
+
+
+
+186.
+@inproceedings{20192306998105 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {An Overview of the OMAF Standard for 360 Video},
+journal = {Data Compression Conference Proceedings},
+author = {Hannuksela, Miska M. and Wang, Ye-Kui and Hourunranta, Ari},
+volume = {2019-March},
+year = {2019},
+pages = {418 - 427},
+issn = {10680314},
+address = {Snowbird, UT, United states},
+abstract = {Omnidirectional MediA Format (OMAF) is arguably the first virtual reality (VR) system standard, recently developed by the Moving Picture Experts Group (MPEG). OMAF defines a media format that enables omnidirectional media applications, focusing on 360&deg; video, images, and audio, as well as the associated timed text, supporting three degrees of freedom (3DOF). This paper gives an overview of the first edition of the OMAF standard.<br/> &copy; 2019 IEEE.},
+key = {Virtual reality},
+keywords = {Degrees of freedom (mechanics);},
+note = {Media application;Media formats;Moving picture experts group;Three degrees of freedom;},
+URL = {http://dx.doi.org/10.1109/DCC.2019.00050},
+} 
+
+
+
+187.
+@inproceedings{20202508850480 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Viewport prediction for 360 videos: A clustering approach},
+journal = {NOSSDAV 2020 - Proceedings of the 2020 Workshop on Network and Operating System Support for Digital Audio and Video, Part of MMSys 2020},
+author = {Nasrabadi, Afshin Taghavi and Samiei, Aliehsan and Prakash, Ravi},
+year = {2020},
+pages = {34 - 39},
+address = {Istanbul, Turkey},
+abstract = {An important component for viewport-adaptive streaming of 360&deg; videos is viewport prediction. Increasing viewport prediction horizon enables the client to prefetch more chunks into the playback buffer. Having longer buffer results in less rebuffering under fluctuating network conditions. We analyzed the recorded viewport traces of viewers who watched various 360&deg; videos. We propose a clustering-based viewport prediction method that incorporates viewport pattern information from previous video streaming sessions. For several videos, specifically those with well-defined region of interest, the proposed approach increases the viewport prediction horizon and/or prediction accuracy.<br/> &copy; 2020 ACM.},
+key = {Forecasting},
+keywords = {Image segmentation;Video streaming;},
+note = {Adaptive streaming;Clustering approach;Network condition;Pattern information;Prediction accuracy;Prediction horizon;Prediction methods;Region of interest;},
+URL = {http://dx.doi.org/10.1145/3386290.3396934},
+} 
+
+
+
+188.
+@inproceedings{20202208767424 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {LiveDeep: Online Viewport Prediction for Live Virtual Reality Streaming Using Lifelong Deep Learning},
+journal = {Proceedings - 2020 IEEE Conference on Virtual Reality and 3D User Interfaces, VR 2020},
+author = {Feng, Xianglong and Liu, Yao and Wei, Sheng},
+year = {2020},
+pages = {800 - 808},
+address = {Atlanta, GA, United states},
+abstract = {Live virtual reality (VR) streaming has become a popular and trending video application in the consumer market providing users with 360-degree, immersive viewing experiences. To provide premium quality of experience, VR streaming faces unique challenges due to the significantly increased bandwidth consumption. To address the bandwidth challenge, VR video viewport prediction has been proposed as a viable solution, which predicts and streams only the user's viewport of interest with high quality to the VR device. However, most of the existing viewport prediction approaches target only the video-on-demand (VOD) use cases, requiring offline processing of the historical video and/or user data that are not available in the live streaming scenario. In this work, we develop a novel viewport prediction approach for live VR streaming, which only requires video content and user data in the current viewing session. To address the challenges of insufficient training data and real-time processing, we propose a live VR-specific deep learning mechanism, namely LiveDeep, to create the online viewport prediction model and conduct real-time inference. LiveDeep employs a hybrid approach to address the unique challenges in live VR streaming, involving (1) an alternate online data collection, labeling, training, and inference schedule with controlled feedback loop to accommodate for the sparse training data; and (2) a mixture of hybrid neural network models to accommodate for the inaccuracy caused by a single model. We evaluate LiveDeep using 48 users and 14 VR videos of various types obtained from a public VR user head movement dataset. The results indicate around 90% prediction accuracy, around 40% bandwidth savings, and premium processing time, which meets the bandwidth and real-time requirements of live VR streaming.<br/> &copy; 2020 IEEE.},
+key = {Human computer interaction},
+keywords = {Bandwidth;Deep learning;Quality of service;E-learning;Virtual reality;Forecasting;Video on demand;},
+note = {Bandwidth consumption;Hybrid neural networks;Off-line processing;Online data collection;Real time requirement;Real-time inference;Realtime processing;Video on demands (VoD);},
+URL = {http://dx.doi.org/10.1109/VR46266.2020.1584727730619},
+} 
+
+
+
+189.
+@article{20210609877221 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Predictive Adaptive Streaming to Enable Mobile 360-Degree and VR Experiences},
+journal = {IEEE Transactions on Multimedia},
+author = {Hou, Xueshi and Dey, Sujit and Zhang, Jianzhong and Budagavi, Madhukar},
+volume = {23},
+year = {2021},
+pages = {716 - 731},
+issn = {15209210},
+abstract = {As 360-degree videos and virtual reality (VR) applications become popular for consumer and enterprise use cases, the desire to enable truly mobile experiences also increases. Delivering 360-degree videos and cloud/edge-based VR applications require ultra-high bandwidth and ultra-low latency [1], challenging to achieve with mobile networks. A common approach to reduce bandwidth is streaming only the field of view (FOV). However, extracting and transmitting the FOV in response to user head motion can add high latency, adversely affecting user experience. In this paper, we propose a predictive adaptive streaming approach, where the predicted view with high predictive probability is adaptively encoded in relatively high quality according to bandwidth conditions and transmitted in advance, leading to a simultaneous reduction in bandwidth and latency. The predictive adaptive streaming method is based on a deep-learning-based viewpoint prediction model we develop, which uses past head motions to predict where a user will be looking in the 360-degree view. Using a very large dataset consisting of head motion traces from over 36,000 viewers for nineteen 360-degree/VR videos, we validate the ability of our predictive adaptive streaming method to offer high-quality view while simultaneously significantly reducing bandwidth.<br/> &copy; 1999-2012 IEEE.},
+key = {Video streaming},
+keywords = {Virtual reality;Bandwidth;Large dataset;Deep learning;},
+note = {Adaptive streaming;Bandwidth conditions;Field of views;High quality;Prediction model;Simultaneous reduction;Ultra-high bandwidth;VR applications;},
+URL = {http://dx.doi.org/10.1109/TMM.2020.2987693},
+} 
+
+
+
+190.
+@inproceedings{20184806146278 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Probabilistic Viewport Adaptive Streaming for 360-degree Videos},
+journal = {Proceedings - IEEE International Symposium on Circuits and Systems},
+author = {Xu, Zhimin and Zhang, Xinggong and Zhang, Kai and Guo, Zongming},
+volume = {2018-May},
+year = {2018},
+pages = {1-5 },
+issn = {02714310},
+address = {Florence, Italy},
+abstract = {Recently, there has been a significant interest towards 360-degree virtual reality (VR) video. However, it is a big challenge for them to stream over Internet for huge bit-rates. In this paper, we have designed a novel viewport adaptive streaming scheme for 360-degree videos with probabilistic viewport prediction and optimal segments prefetching by Dynamic Adaptive Streaming over HTTP (DASH). In this way, continuous and smooth video playback, low viewport prediction error and high PSNR are obtained. To avoid head-movement prediction error, a probabilistic viewport prediction model is proposed, which leverages the probability distribution of user's orientation. Further, an optimal segments prefetching method is implemented. Finally, we also implement our method in a real system. The numerous experiment results have demonstrated that the proposed method has achieved significant performance gains compared with the existing methods. Our related work also win the Runner-up in ICME 2017 DASH-IF Grand Challenge: Dynamic Adaptive Streaming over HTTP.<br/> &copy; 2018 IEEE.},
+key = {Probability distributions},
+keywords = {Forecasting;Motion estimation;Video streaming;Virtual reality;HTTP;},
+note = {Adaptive streaming;Dynamic Adaptive Streaming over HTTP;Grand Challenge;Head movements;Performance Gain;Prediction errors;Prediction model;Video Playback;},
+URL = {http://dx.doi.org/10.1109/ISCAS.2018.8351404},
+} 
+
+
+191.
+@article{20201008267033 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Optimizing Fixation Prediction Using Recurrent Neural Networks for 360 Video Streaming in Head-Mounted Virtual Reality},
+journal = {IEEE Transactions on Multimedia},
+author = {Fan, Ching-Ling and Yen, Shou-Cheng and Huang, Chun-Ying and Hsu, Cheng-Hsin},
+volume = {22},
+number = {3},
+year = {2020},
+pages = {744 - 759},
+issn = {15209210},
+abstract = {We study the problem of predicting the viewing probability of different parts of 360&deg; videos when streaming them to head-mounted displays. We propose a fixation prediction network based on recurrent neural network, which leverages sensor and content features. The content features are derived by computer vision (CV) algorithms, which may suffer from inferior performance due to various types of distortion caused by diverse 360&deg; video projection models. We propose a unified approach with overlapping virtual viewports to eliminate such negative effects, and we evaluate our proposed solution using several CV algorithms, such as saliency detection, face detection, and object detection. We find that overlapping virtual viewports increase the performance of these existing CV algorithms that were not trained for 360&deg; videos. We next fine-tune our fixation prediction network with diverse design options, including: 1) with or without overlapping virtual viewports, 2) with or without future content features, and 3) different feature sampling rates. We empirically choose the best fixation prediction network and use it in a 360&deg; video streaming system. We conduct extensive trace-driven simulations with a large-scale dataset to quantify the performance of the 360&deg; video streaming system with different fixation prediction algorithms. The results show that our proposed fixation prediction network outperforms other algorithms in several aspects, such as: 1) achieving comparable video quality (average gaps between-0.05 and 0.92 dB), 2) consuming much less bandwidth (average bandwidth reduction by up to 8 Mb/s), 3) reducing the rebuffering time (on average 40 s in bandwidth-limited 4G cellular networks), and 4) running in real-time (at most 124 ms).<br/> &copy; 1999-2012 IEEE.},
+key = {Helmet mounted displays},
+keywords = {E-learning;Bandwidth;Object detection;Virtual reality;Large dataset;Forecasting;Face recognition;Recurrent neural networks;Video streaming;},
+note = {Bandwidth limiteds;Bandwidth reductions;Head mounted displays;Head mounted virtual reality;Large-scale dataset;Prediction algorithms;Saliency detection;Trace driven simulation;},
+URL = {http://dx.doi.org/10.1109/TMM.2019.2931807},
+} 
+
+
+
+192.
+@article{20214411100043 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Sparkle: User-Aware Viewport Prediction in 360-Degree Video Streaming},
+journal = {IEEE Transactions on Multimedia},
+author = {Chen, Jinyu and Luo, Xianzhuo and Hu, Miao and Wu, Di and Zhou, Yipeng},
+volume = {23},
+year = {2021},
+pages = {3853 - 3866},
+issn = {15209210},
+abstract = {<div data-language="eng" data-ev-field="abstract">In 360-degree video streaming, users commonly watch a video scene within a Field of View (FoV). Such observation provides an opportunity to save bandwidth consumption by predicting and then prefetching video tiles within the FoV. However, existing FoV prediction methods seldom consider the diversity among user behaviors and the impact of different video genres. Thus, previous one-size-fits-all models cannot make accurate prediction for users with different behavior patterns. In this paper, we propose a user-aware viewport prediction algorithm called Sparkle, which is a practical whitebox approach for FoV prediction. Instead of training a single learning model to predict the behaviors for all users, our proposed algorithm is tailored to fit each individual user. In particular, unlike other learning models, our prediction model is completely explainable and all the parameters have their physical meanings. We first conduct a measurement study to analyze real user behaviors and observe that there exists sharp fluctuation of view orientation and user posture has significant impact on the viewport movement of users. Moreover, cross-user similarity is diverse across different video genres. Inspired by these insights, we further design a user-aware viewport prediction algorithm by mimicking a user's viewport movement on the tile map, and determine how a user will change the viewport angle based on his (or her) trajectory and other similar users' behaviors in the past time window. Extensive evaluations with real datasets demonstrate that, our proposed algorithm significantly outperforms the state-of-the-art benchmark methods (e.g., LSTM-based methods) by over 5%, and the prediction accuracy is much more stable on various types of 360-degree videos than previous methods.<br/></div> &copy; 1999-2012 IEEE.},
+key = {Forecasting},
+keywords = {Learning systems;Video streaming;Long short-term memory;Behavioral research;},
+note = {360-degree video;Field of views;Learning models;Prediction algorithms;User behavior analysis;User behaviors;User-aware;Video-streaming;View predictions;Viewport prediction;},
+URL = {http://dx.doi.org/10.1109/TMM.2020.3033127},
+} 
+
+
+
+193.
+@inproceedings{20185006246136 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Your attention is unique: Detecting 360-degree video saliency in head-mounted display for head movement prediction},
+journal = {MM 2018 - Proceedings of the 2018 ACM Multimedia Conference},
+author = {Nguyen, Anh and Yan, Zhisheng and Nahrstedt, Klara},
+year = {2018},
+pages = {1190 - 1198},
+address = {Seoul, Korea, Republic of},
+abstract = {Head movement prediction is the key enabler for the emerging 360-degree videos since it can enhance both streaming and rendering efficiency. To achieve accurate head movement prediction, it becomes imperative to understand user's visual attention on 360-degree videos under head-mounted display (HMD). Despite the rich history of saliency detection research, we observe that traditional models are designed for regular images/videos fixed at a single viewport and would introduce problems such as central bias and multi-object confusion when applied to the multi-viewport 360-degree videos switched by user interaction. To fill in this gap, this paper shifts the traditional single-viewport saliency models that have been extensively studied for decades to a fresh panoramic saliency detection specifically tailored for 360-degree videos, and thus maximally enhances the head movement prediction performance. The proposed head movement prediction framework is empowered by a newly created dataset for 360-degree video saliency, a panoramic saliency detection model and an integration of saliency and head tracking history for the ultimate head movement prediction. Experimental results demonstrate the measurable gain of both the proposed panoramic saliency detection and head movement prediction over traditional models for regular images/videos.<br/> &copy; 2018 Association for Computing Machinery.},
+key = {Helmet mounted displays},
+keywords = {Behavioral research;Forecasting;Motion estimation;},
+note = {360-degree video;Head mounted displays;Head movements;Saliency;Saliency detection;Traditional models;Video saliencies;Visual Attention;},
+URL = {http://dx.doi.org/10.1145/3240508.3240669},
+} 
+
+
+
+194.
+@inproceedings{20213110705705 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {LiveROI: Region of interest analysis for viewport prediction in live mobile virtual reality streaming},
+journal = {MMSys 2021 - Proceedings of the 2021 Multimedia Systems Conference},
+author = {Feng, Xianglong and Li, Weitian and Wei, Sheng},
+year = {2021},
+pages = {133 - 145},
+address = {Virtual, Online, Turkey},
+abstract = {<div data-language="eng" data-ev-field="abstract">Virtual reality (VR) streaming can provide immersive video viewing experience to the end users but with huge bandwidth consumption. Recent research has adopted selective streaming to address the bandwidth challenge, which predicts and streams the user's viewport of interest with high quality and the other portions of the video with low quality. However, the existing viewport prediction mechanisms mainly target the video-on-demand (VOD) scenario relying on historical video and user trace data to build the prediction model. The community still lacks an effective viewport prediction approach to support live VR streaming, the most engaging and popular VR streaming experience. We develop a region of interest (ROI)-based viewport prediction approach, namely LiveROI, for live VR streaming. LiveROI employs an action recognition algorithm to analyze the video content and uses the analysis results as the basis of viewport prediction. To eliminate the need of historical video/user data, LiveROI employs adaptive user preference modeling and word embedding to dynamically select the video viewport at runtime based on the user head orientation. We evaluate LiveROI with 12 VR videos viewed by 48 users obtained from a public VR head movement dataset. The results show that LiveROI achieves high prediction accuracy and significant bandwidth savings with real-Time processing to support live VR streaming.<br/></div> &copy; 2021 ACM.},
+key = {Forecasting},
+keywords = {Video streaming;Virtual reality;Bandwidth;Video on demand;Image segmentation;},
+note = {Action recognition algorithms;Bandwidth consumption;Prediction accuracy;Prediction mechanisms;Realtime processing;Region-of-interest analysis;User preference modeling;Video on demands (VoD);},
+URL = {http://dx.doi.org/10.1145/3458305.3463378},
+} 
+
+
+
+195.
+@article{20211510198328 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {LiveObj: Object Semantics-based Viewport Prediction for Live Mobile Virtual Reality Streaming},
+journal = {IEEE Transactions on Visualization and Computer Graphics},
+author = {Feng, Xianglong and Bao, Zeyang and Wei, Sheng},
+volume = {27},
+number = {5},
+year = {2021},
+pages = {2736 - 2745},
+issn = {10772626},
+abstract = {<div data-language="eng" data-ev-field="abstract">Virtual reality (VR) video streaming (a.k.a., 360-degree video streaming) has been gaining popularity recently as a new form of multimedia providing the users with immersive viewing experience. However, the high volume of data for the 360-degree video frames creates significant bandwidth challenges. Research efforts have been made to reduce the bandwidth consumption by predicting and selectively streaming the user's viewports. However, the existing approaches require historical user or video data and cannot be applied to live streaming, the most attractive VR streaming scenario. We develop a live viewport prediction mechanism, namely LiveObj, by detecting the objects in the video based on their semantics. The detected objects are then tracked to infer the user's viewport in real time by employing a reinforcement learning algorithm. Our evaluations based on 48 users watching 10 VR videos demonstrate high prediction accuracy and significant bandwidth savings obtained by LiveObj. Also, LiveObj achieves real-time performance with low processing delays, meeting the requirement of live VR streaming.<br/></div> &copy; 1995-2012 IEEE.},
+key = {Video streaming},
+keywords = {Reinforcement learning;Semantics;Virtual reality;Object detection;Bandwidth;Learning algorithms;Forecasting;},
+note = {Bandwidth consumption;Bandwidth savings;Live streaming;Prediction accuracy;Prediction mechanisms;Processing delay;Real time performance;Research efforts;},
+URL = {http://dx.doi.org/10.1109/TVCG.2021.3067686},
+} 
+
+
+
+196.
+@article{20211810302265 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Graph Learning Based Head Movement Prediction for Interactive 360 Video Streaming},
+journal = {IEEE Transactions on Image Processing},
+author = {Zhang, Xue and Cheung, Gene and Zhao, Yao and Le Callet, Patrick and Lin, Chunyu and Tan, Jack Z. G.},
+volume = {30},
+year = {2021},
+pages = {4622 - 4636},
+issn = {10577149},
+abstract = {<div data-language="eng" data-ev-field="abstract">Ultra-high definition (UHD) 360 videos encoded in fine quality are typically too large to stream in its entirety over bandwidth (BW)-constrained networks. One popular approach is to interactively extract and send a spatial sub-region corresponding to a viewer's current field-of-view (FoV) in a head-mounted display (HMD) for more BW-efficient streaming. Due to the non-negligible round-trip-time (RTT) delay between server and client, accurate head movement prediction foretelling a viewer's future FoVs is essential. In this paper, we cast the head movement prediction task as a sparse directed graph learning problem: three sources of relevant information - collected viewers' head movement traces, a 360 image saliency map, and a biological human head model - are distilled into a view transition Markov model. Specifically, we formulate a constrained maximum a posteriori (MAP) problem with likelihood and prior terms defined using the three information sources. We solve the MAP problem alternately using a hybrid iterative reweighted least square (IRLS) and Frank-Wolfe (FW) optimization strategy. In each FW iteration, a linear program (LP) is solved, whose runtime is reduced thanks to warm start initialization. Having estimated a Markov model from data, we employ it to optimize a tile-based 360 video streaming system. Extensive experiments show that our head movement prediction scheme noticeably outperformed existing proposals, and our optimized tile-based streaming scheme outperformed competitors in rate-distortion performance.<br/></div> &copy; 1992-2012 IEEE.},
+key = {Directed graphs},
+keywords = {Forecasting;Markov processes;Signal distortion;Electric distortion;Image coding;Linear programming;Motion estimation;Video streaming;Helmet mounted displays;},
+note = {Head mounted displays;Information sources;Iterative reweighted least square;Maximum a posteriori;Optimization strategy;Rate distortion performance;Round trip time delays;Ultra high definition (UHD);},
+URL = {http://dx.doi.org/10.1109/TIP.2021.3073283},
+} 
+
+
+
+197.
+@article{20210409830127 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Viewport-Aware Deep Reinforcement Learning Approach for 360 Video Caching},
+journal = {IEEE Transactions on Multimedia},
+author = {Maniotis, Pantelis and Thomos, Nikolaos},
+volume = {24},
+year = {2022},
+pages = {386 - 399},
+issn = {15209210},
+abstract = {<div data-language="eng" data-ev-field="abstract">360&deg; video is an essential component of VR/AR/MR systems that provides immersive experience to the users. However, 360&deg; video is associated with high bandwidth requirements. The required bandwidth can be reduced by exploiting the fact that users are interested in viewing only a part of the video scene and that users request viewports that overlap with each other. Motivated by the findings of our recent works where the benefits of caching video tiles at edge servers instead of caching entire 360&deg; videos were shown, in this paper, we introduce the concept of virtual viewports that have the same number of tiles with the original viewports. The tiles forming these viewports are the most popular ones for each video and are determined by the users' requests. Then, we propose a reactive caching scheme that assumes unknown videos' and viewports' popularity. Our scheme determines which videos to cache as well as which is the optimal virtual viewport per video. Virtual viewports permit to lower the dimensionality of the cache optimization problem. To solve the problem, we first formulate the content placement of 360&deg; videos in edge cache networks as a Markov Decision Process (MDP), and then we determine the optimal caching placement using the Deep Q-Network (DQN) algorithm. The proposed solution aims at maximizing the overall quality of the 360&deg; videos delivered to the end-users by caching the most popular 360&deg; videos at base quality along with a virtual viewport in high quality. We extensively evaluate the performance of the proposed system and compare it with that of known systems such as Least Frequently Used (LFU), Least Recently Used (LRU), First In First Out (FIFO), over both synthetic and real 360&deg; video traces. The results reveal the large benefits coming from reactive caching of virtual viewports instead of the original ones in terms of the overall quality of the rendered viewports, the cache hit ratio, and the servicing cost.<br/></div> &copy; 2021 IEEE.},
+key = {Reinforcement learning},
+keywords = {Bandwidth;Deep learning;Markov processes;Virtual reality;Video signal processing;Signal encoding;},
+note = {Cache optimization;First in first outs;Least frequently used;Least recently used;Markov Decision Processes;Proactive caching;Reinforcement learning approach;Servicing costs;},
+URL = {http://dx.doi.org/10.1109/TMM.2021.3052339},
+} 
+
+
+
+198.
+@inproceedings{20190706508204 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {CUB360: Exploiting Cross-Users Behaviors for Viewport Prediction in 360 Video Adaptive Streaming},
+journal = {Proceedings - IEEE International Conference on Multimedia and Expo},
+author = {Ban, Yixuan and Xie, Lan and Xu, Zhimin and Zhang, Xinggong and Guo, Zongming and Wang, Yue},
+volume = {2018-July},
+year = {2018},
+pages = {1-6},
+issn = {19457871},
+address = {San Diego, CA, United states},
+abstract = {To ensure 360-degree video's continuous playback and reduce the bandwidth waste, predicting user's future fixation is indispensable. However, existing methods concentrate either on user's motion information or content information. None of them consider users watching behaviors' inconsistency which embodies user's attention distribution more explicitly. So in this paper, we exploit Cross-Users Behaviors for viewport prediction in 360-degree video adaptive streaming, namely CUB360, trying to concurrently consider user's personalized information and cross-users behaviors information to predict future viewport. Besides, we use a QoE-driven framework to optimize existing video streaming approaches and propose a general algorithm aiming at solving the NP problem at a low complexity. Extensive experimental results over real datasets demonstrate that compared with traditional adaptive streaming method, our proposal can significantly boost the prediction accuracy by 20.2% absolutely and 48.1 % relatively. Besides, the mean quality can get 30.28% gain while quality variance can be reduced by 29.89%.<br/> &copy; 2018 IEEE.},
+key = {Forecasting},
+keywords = {Video streaming;},
+note = {360-degree video;Adaptive streaming;Bandwidth waste;Content information;cross-users behaviors;Motion information;Personalized information;Prediction accuracy;},
+URL = {http://dx.doi.org/10.1109/ICME.2018.8486606},
+} 
+
+
+199.
+@inproceedings{20212110389690 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {A spherical convolution approach for learning long term viewport prediction in 360 immersive video},
+journal = {AAAI 2020 - 34th AAAI Conference on Artificial Intelligence},
+author = {Wu, Chenglei and Zhang, Rui-Xiao and Wang, Zhi and Sun, Lifeng},
+year = {2020},
+pages = {14003 - 14010},
+address = {New York, NY, United states},
+abstract = {<div data-language="eng" data-ev-field="abstract">Viewport prediction for 360 video forecasts a viewer&rsquo;s viewport when he/she watches a 360 video with a head-mounted display, which benefits many VR/AR applications such as 360 video streaming and mobile cloud VR. Existing studies based on planar convolutional neural network (CNN) suffer from the image distortion and split caused by the sphere-to-plane projection. In this paper, we start by proposing a spherical convolution based feature extraction network to distill spatial-temporal 360 information. We provide a solution for training such a network without a dedicated 360 image or video classification dataset. We differ with previous methods, which base their predictions on image pixel-level information, and propose a semantic content and preference based viewport prediction scheme. In this paper, we adopt a recurrent neural network (RNN) network to extract a user&rsquo;s personal preference of 360 video content from minutes of embedded viewing histories. We utilize this semantic preference as spatial attention to help network find the "interested" regions on a future video. We further design a tailored mixture density network (MDN) based viewport prediction scheme, including viewport modeling, tailored loss function, etc, to improve efficiency and accuracy. Our extensive experiments demonstrate the rationality and performance of our method, which outperforms state-of-the-art methods, especially in long-term prediction.<br/></div> Copyright &copy; 2020, Association for the Advancement of Artificial Intelligence (www.aaai.org). All rights reserved.},
+key = {Forecasting},
+keywords = {Recurrent neural networks;Classification (of information);Convolution;Helmet mounted displays;Spheres;Semantics;},
+note = {Convolution approach;Head mounted displays;Long-term prediction;Personal preferences;Prediction schemes;Recurrent neural network (RNN);State-of-the-art methods;Video classification;},
+} 
+
+
+200.
+@article{20211810302091 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {RAPT360: Reinforcement Learning-Based Rate Adaptation for 360-Degree Video Streaming with Adaptive Prediction and Tiling},
+journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+author = {Kan, Nuowen and Zou, Junni and Li, Chenglin and Dai, Wenrui and Xiong, Hongkai},
+volume = {32},
+number = {3},
+year = {2022},
+pages = {1607 - 1623},
+issn = {10518215},
+abstract = {<div data-language="eng" data-ev-field="abstract">Tile-based rate adaption can improve the quality of experience (QoE) for adaptive 360-degree video streaming under constrained network conditions, which, however, is a challenging problem due to the requirements of accurate prediction for users' viewports and optimal bitrate allocation for tiles. In this paper, we propose a strategy that deploys reinforcement learning-based Rate Adaptation with adaptive Prediction and Tiling for 360-degree video streaming, named RAPT360, to address these challenges. Specifically, to improve the accuracy of the state-of-the-art viewport prediction approaches, we fit the time-varying Laplace distribution-based probability density function of the prediction error for different prediction lengths. On the basis of that, we develop a viewport identification method to determine the viewport area of a user depending on the buffer occupancy, where the obtained viewport can cover the real viewport with any given probability confidence level. We then propose a viewport-aware adaptive tiling scheme to improve the bandwidth efficiency, where three types of tile granularities are allocated according to the shape and position of the 2-D projection of that viewport. By establishing an adaptive streaming model and QoE metric specific to 360-degree videos, we finally formulate the rate adaptation problem for tile-based 360-degree video streaming as a non-linear discrete optimization problem that targets at maximizing the long-term user QoE under a bandwidth-constrained network. To efficiently solve this problem, we model the rate adaptation logic as a Markov decision process (MDP) and employ the deep reinforcement learning (DRL)-based algorithm to dynamically learn the optimal bitrate allocation of tiles. Extensive experimental results show that RAPT360 achieves a performance gain of at least 1.47 dB on average chunk QoE, including a video quality improvement of at least 1.33 dB, in comparison to the existing strategies for tile-based adaptive 360-degree video streaming.<br/></div> &copy; 1991-2012 IEEE.},
+key = {Reinforcement learning},
+keywords = {Probability distributions;Deep learning;Markov processes;Probability density function;Video streaming;Constrained optimization;Forecasting;Bandwidth;Quality of service;Learning algorithms;},
+note = {Adaptive predictions;Bandwidth efficiency;Bandwidth-constrained;Identification method;Laplace distributions;Markov Decision Processes;Non-linear discrete optimization problems;Quality of experience (QoE);},
+URL = {http://dx.doi.org/10.1109/TCSVT.2021.3076585},
+} 
+
+
+201.
+@article{20221912091570 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Subjective and Objective Video Quality Assessment for Windowed-6DoF Synthesized Videos},
+journal = {IEEE Transactions on Broadcasting},
+author = {Jin, Chongchong and Peng, Zongju and Chen, Fen and Jiang, Gangyi},
+volume = {68},
+number = {3},
+year = {2022},
+pages = {594 - 608},
+issn = {00189316},
+abstract = {<div data-language="eng" data-ev-field="abstract">Video Quality Assessment (VQA) for windowed six Degree of Freedom (windowed-6DoF) synthesized viewpoints is conducive to the development and broadcasting of 6DoF immersive video system. To explore this new field, we propose the subjective and objective VQA studies for windowed-6DoF synthesized videos. Stage one, a pioneering windowed-6DoF synthesized video quality database with compressed distortion, rendering distortion, and viewing path discomfort are presented, in which overall 128 videos are synthesized from four sequences with different distortion combinations. Stage two, a no-reference objective VQA method is proposed. Firstly, the video is converted into one traditional spatio-temporal domain (XY-T domain) and two new spatio-temporal domains (XT-Y and TY-X domains). Secondly, the emerging rendering distortion and viewing path discomfort are measured in the XT-Y and TY-X domains based on their respective characteristic statistical models, and the common compressed distortion is measured in XY-T domain. Thirdly, the image numbers of new domains are accurately determined through optical flow based depth estimation. Finally, the regression model plus weighting strategy is used to obtain the ultimate quality score of windowed-6DoF synthesized video. Experimental results on three synthesized video databases illustrate that the proposed objective NR VQA method has a good performance in evaluating various synthesized videos, compared with other classic and state-of-the-art 2D/3D IQA/VQA metrics.<br/></div> &copy; 1963-12012 IEEE.},
+key = {Database systems},
+keywords = {Regression analysis;Degrees of freedom (mechanics);Rendering (computer graphics);Video recording;},
+note = {Distortion measurement;Quality assessment;Rendering (computer graphic);Rendering distortion;Synthesised;Synthesized video quality database;Video quality;Video quality assessment;Video quality database;Viewing path discomfort;Windowed-6dof;},
+URL = {http://dx.doi.org/10.1109/TBC.2022.3165473},
+} 
+
+
+
+203.
+@article{yang2018synbf,
+  title={SYNBF: A new bilateral filter for postremoval of noise from synthesis views in 3-d video},
+  author={Yang, Meng and Zheng, Nanning},
+  journal={IEEE Transactions on Multimedia},
+  volume={21},
+  number={1},
+  pages={15--28},
+  year={2018},
+  publisher={IEEE},
+  URL = {https://doi.org/10.1109/tmm.2018.2849605},
+}
+
+
+204.
+@article{20183605782768 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Cross-view multi-lateral filter for compressed multi-view depth video},
+journal = {IEEE Transactions on Image Processing},
+author = {Yang, You and Liu, Qiong and He, Xin and Liu, Zhen},
+volume = {28},
+number = {1},
+year = {2019},
+pages = {302 - 315},
+issn = {10577149},
+abstract = {Multi-view depth is crucial for describing positioning information in 3D space for virtual reality, free viewpoint video, and other interaction- and remote-oriented applications. However, in cases of lossy compression for bandwidth limited remote applications, the quality of multi-view depth video suffers from quantization errors, leading to the generation of obvious artifacts in consequent virtual view rendering during interactions. Considerable efforts must be made to properly address these artifacts. In this paper, we propose a cross-view multi-lateral filtering scheme to improve the quality of compressed depth maps/videos within the framework of asymmetric multi-view video with depth compression. Through this scheme, a distorted depth map is enhanced via non-local candidates selected from current and neighboring viewpoints of different time-slots. Specifically, these candidates are clustered into a macro super pixel denoting the physical and semantic cross-relationships of the cross-view, spatial and temporal priors. The experimental results show that gains from static depth maps and dynamic depth videos can be obtained from PSNR and SSIM metrics, respectively. In subjective evaluations, even object contours are recovered from a compressed depth video. We also verify our method via several practical applications. For these verifications, artifacts on object contours are properly managed for the development of interactive video and discontinuous object surfaces are restored for 3D modeling. Our results suggest that the proposed filter outperforms state-of-the-art filters and is suitable for use in multi-view color plus depth-based interaction- and remote-oriented applications.<br/> &copy; 1992-2012 IEEE.},
+key = {Semantics},
+keywords = {Image segmentation;3D modeling;Bandwidth compression;Image compression;Three dimensional computer graphics;Virtual reality;},
+note = {cross-view;Depth videos;Discontinuous objects;Multi-lateral filter;Multiview video;Positioning information;Subjective evaluations;Virtual view rendering;},
+URL = {http://dx.doi.org/10.1109/TIP.2018.2867740},
+} 
+
+
+
+205.
+@article{20210609881258 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Make Full Use of Priors: Cross-View Optimized Filter for Multi-View Depth Enhancement},
+journal = {ACM Transactions on Multimedia Computing, Communications and Applications},
+author = {He, Xin and Liu, Qiong and Yang, You},
+volume = {16},
+pages = { 1-19 }
+number = {4},
+year = {2021},
+issn = {15516857},
+abstract = {Multi-view video plus depth (MVD) is the promising and widely adopted data representation for future 3D visual applications and interactive media. However, compression distortions on depth videos impede the development of such applications, and filters are crucially needed for the quality enhancement at the terminal side. Cross-view priors can intuitively be involved in filter design, but these priors are also distorted in compression and thus the contribution of them can hardly be considered in previous research. In this article, we propose a cross-view optimized filter for depth map quality enhancement by making full use of inner- and cross-view priors. We dedicate to evaluate the contributions of distorted cross-view priors in filtering the current view of depth, and then both inner- and cross-view priors can be involved in the filter design. Thus, distortions of cross-view priors are not barriers again as before. For the purpose of that, mutual information guided cross-view consistency is designed to evaluate the contributions of cross-view priors from compression distortions of MVD. After that, under the framework of global optimization, both inner- and cross-view priors are modeled and taken to minimize the designed energy function where both data accuracy and spatial smoothness are modeled. The experimental results show that the proposed model outperforms state-of-the-art methods, where 3.289 dB and 0.0407 average gains on peak signal-to-noise ratio and structural similarity metrics can be obtained, respectively. For the subjective evaluations, object details and structure information are recovered in the compressed depth video. We also verify our method via several practical applications, including virtual view synthesis for smooth interaction and point cloud for 3D modeling for accuracy evaluation. In these verifications, the ringing and malposition artifacts on object contours are properly handled for interactive video, and discontinuous object surfaces are restored for 3D modeling. All of these results suggest that compression distortions in MVD can be properly filtered by the proposed model, which provides a promising solution for future bandwidth constrained 3D and interactive visual applications.<br/> &copy; 2020 ACM.},
+key = {Global optimization},
+keywords = {Bandwidth compression;3D modeling;Signal to noise ratio;Three dimensional computer graphics;},
+note = {Bandwidth-constrained;Discontinuous objects;Multi view video plus depth (MVD);Peak signal to noise ratio;State-of-the-art methods;Structural similarity;Subjective evaluations;Virtual view synthesis;},
+URL = {http://dx.doi.org/10.1145/3408293},
+} 
+
+
+
+206.
+@article{20203609145091 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {MV-GNN: Multi-View Graph Neural Network for Compression Artifacts Reduction},
+journal = {IEEE Transactions on Image Processing},
+author = {He, Xin and Liu, Qiong and Yang, You},
+volume = {29},
+year = {2020},
+pages = {6829 - 6840},
+issn = {10577149},
+abstract = {Inevitable compression artifacts in multi-view video (MVV) can clearly degrade the quality of experience in many interaction-oriented 3D visual applications. Under the framework of asymmetric coding, low-quality images can be enhanced with high-quality images from the neighboring viewpoints considering the similarity among different views. However, compression artifacts and warping error cause different cross-view quality gaps for various sequences, and thus the contribution of cross-view priors can hardly be located and considered in previous works. In this paper, we propose a multi-view graph neural network (MV-GNN) to reduce compression artifacts in multi-view compressed images. We dedicate to design a fusion mechanism which can exploit contributions from neighboring viewpoints and meanwhile suppress the misleading information. In our method, a GNN-based fusion mechanism is designed to fuse the cross-view information under the aggregation and update mechanism of GNN. Experiments show that 1.672 dB and 0.0242 average gains on PSNR and SSIM metrics can be obtained, respectively. For the subjective evaluations, blocking effect in the compressed images are clearly suppressed and the damaged object boundary are better recovered. The experimental results demonstrate that our MV-GNN outperforms the state-of-the-art methods.<br/> &copy; 1992-2012 IEEE.},
+key = {Image compression},
+keywords = {Image enhancement;Three dimensional computer graphics;Image coding;Quality of service;},
+note = {Compression artifacts;Graph neural networks;High quality images;Misleading informations;Quality of experience (QoE);State-of-the-art methods;Subjective evaluations;Visual applications;},
+URL = {http://dx.doi.org/10.1109/TIP.2020.2994412},
+} 
+
+
+207.
+@article{alexa2003computing,
+  title={Computing and rendering point set surfaces},
+  author={Alexa, Marc and Behr, Johannes and Cohen-Or, Daniel and Fleishman, Shachar and Levin, David and Silva, Claudio T.},
+  journal={IEEE Transactions on visualization and computer graphics},
+  volume={9},
+  number={1},
+  pages={3--15},
+  year={2003},
+  publisher={IEEE},
+  URL = {https://doi.org/10.1109/tvcg.2003.1175093},
+}
+
+
+208.
+@article{20073310761069 ,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2023 Elsevier Inc.},
+copyright = {Compendex},
+title = {Parameterization-free projection for geometry reconstruction},
+journal = {ACM Transactions on Graphics},
+author = {Lipman, Yaron and Cohen-Or, Daniel and Levin, David and Tal-Ezer, Hillel},
+volume = {26},
+number = {3},
+year = {2007},
+issn = {07300301},
+abstract = {We introduce a Locally Optimal Projection operator (LOP) for surface approximation from point-set data. The operator is parameterization free, in the sense that it does not rely on estimating a local normal, fitting a local plane, or using any other local parametric representation. Therefore, it can deal with noisy data which clutters the orientation of the points. The method performs well in cases of ambiguous orientation, e.g., if two folds of a surface lie near each other, and other cases of complex geometry in which methods based upon local plane fitting may fail. Although defined by a global minimization problem, the method is effectively local, and it provides a second order approximation to smooth surfaces. Hence allowing good surface approximation without using any explicit or implicit approximation space. Furthermore, we show that LOP is highly robust to noise and outliers and demonstrate its effectiveness by applying it to raw scanned data of complex shapes. &copy; 2007 ACM.},
+key = {Image reconstruction},
+keywords = {Approximation theory;Clutter (information theory);Computational geometry;Optimization;Projection systems;Surface reconstruction;},
+note = {Geometry projection operators;Locally Optimal Projection operator (LOP);Point-cloud;},
+URL = {http://dx.doi.org/10.1145/1276377.1276405},
+} 
